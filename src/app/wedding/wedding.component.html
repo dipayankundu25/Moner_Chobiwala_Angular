@@ -1,0 +1,45 @@
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    This is a modal.
+  </div>
+</ng-template>
+
+<div class="container portfolio py-5" id="Wedding">
+  <div class="row rowsetting">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto porfolio-settings">
+      <img class="img-portfolio" src="../../assets/img/asn11  (15).jpg"(click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/_ASN6408.jpg"(click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/_ASN7185_1.jpg"(click)="openModal(template)">
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto porfolio-settings">
+      <img class="img-portfolio" src="../../assets/img/_ASN4252_1.jpg"(click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/A.S.N 1 (53)_1.jpg"(click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/ASN5 (35).jpg"(click)="openModal(template)">
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto porfolio-settings">
+      <img class="img-portfolio" src="../../assets/img/_ASN8697.jpg"(click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/_SAR9651.jpg"(click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/_ASN8206.jpg"(click)="openModal(template)">
+    </div>
+  </div>
+  <div class="row rowsetting" id="load2" *ngIf="weddingLoadMore">
+    <div class="col-sm-4 col-10 d-block m-auto porfolio-settings">
+      <img class="img-portfolio" src="../../assets/img/_ASN3451.jpg" alt=""(click)="openModal(template)">
+    </div>
+    <div class="col-sm-4 col-10 d-block m-auto porfolio-settings">
+      <img class="img-portfolio" src="../../assets/img/asn2 (7).jpg" alt="" (click)="openModal(template)">
+    </div>
+    <div class="col-sm-4 col-10 d-block m-auto porfolio-settings">
+      <img class="img-portfolio" src="../../assets/img/ASN_9292.jpg" alt=""(click)="openModal(template)">
+    </div>
+  </div>
+  <div class="py-5 text-center d-flex flex-column justify-content-center align-items-center ">
+    <button class="btn-2 text-dark btn-md" id="button2" *ngIf="weddingLoadButton" (click)="weddingLoad()">Load More</button>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+.hearderset {
+  box-sizing: border-box;
+}
+
+.hearderset h1 {
+  font-size: 64px;
+}
+
+.header {
+  min-height: 85vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+    url(../../assets/img/_ASN1331.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.ourservices p {
+  color: #6c757d;
+}
+
+.rowsetting p {
+  padding: 10px;
+  color: #6c757d !important;
+}
+
+.rowsetting h2 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.setting a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.setting a:hover {
+  text-decoration: none;
+  color: rgb(226, 193, 4);
+}
+
+.portfolio p {
+  color: #6c757d;
+}
+
+.porfolio-settings img {
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+/* background text  */
+.position-relative {
+  position: relative!important;
+}
+
+.position-absolute {
+  position: absolute!important;
+}
+
+.position-fixed{
+  position: fixed!important;
+}
+
+.text-overlay {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #8080802b;
+  z-index: 0;
+}
+
+/* animation */
+.porfolio-settings img {
+  transform: scale(1);
+  transition: 0.2s ease-in;
+  animation-name: scale-in;
+  animation-duration: 0.4s;
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.porfolio-settings img:hover {
+  transform: scale(1.07);
+}
+
+.bg-light-yellow {
+  background: rgba(226, 193, 4, 7%);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,46 @@
+<section id="Portfolio" class="Options bg-light">
+  <carousel>
+    <slide>
+      <img src="../../assets/img/banner.png" alt="first slide" style="display: block; width: 100%;">
+    </slide>
+    <slide>
+      <img src="../../assets/img/banner2.png" alt="second slide" style="display: block; width: 100%;">
+    </slide>
+    <slide>
+      <img src="../../assets/img/banner3.png" alt="third slide" style="display: block; width: 100%;">
+    </slide>
+  </carousel>
+  <div class="container ">
+    <div class="row rowsetting">
+      <div class="col-sm-12 col-10 m-auto d-flex justify-content-center align-items-center flex-column  ">
+        <nav class="navbar-2 navbar-expand navbar-light py-5 Portfolio-navbar text-center">
+          <ul class="navbar-nav" id="navbar">
+            <li class="nav-item px-2 d-flex">
+              <span class="navlink cursor-pointer" id="portfolioAll" (click)="all()" [ngStyle]="{color: getColorAll()}">All</span>
+              <span class="ps-3 d-sm-flex d-none">|</span>
+            </li>
+            <li class="nav-item px-2 d-flex">
+              <span class="navlink cursor-pointer" id="portfolioWedding" (click)="wedding()" [ngStyle]="{color: getColorWedding()}">Wedding</span>
+              <span class="ps-3 d-sm-flex d-none">|</span>
+            </li>
+            <li class="nav-item px-2 d-flex">
+              <span class="navlink cursor-pointer" id="portfolioPreWedding" (click)="preWedding()" [ngStyle]="{color: getColorPreWedding()}">Pre-Wedding</span>
+              <span class="ps-3 d-sm-flex d-none">|</span>
+            </li>
+            <li class="nav-item px-2 d-flex">
+              <span class="navlink cursor-pointer" id="portfolioBaby" (click)="baby()"  [ngStyle]="{color: getColorBaby()}">Baby</span>
+              <span class="ps-3 d-sm-flex d-none">|</span>
+            </li>
+            <li class="nav-item px-2 d-flex">
+              <span class="navlink cursor-pointer" id="portfolioVideo" (click)="video()" [ngStyle]="{color: getColorVideo()}">Videos</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+<app-all *ngIf="allShow"></app-all>
+<app-wedding *ngIf="weddingShow"></app-wedding>
+<app-pre-wedding *ngIf="preWeddingShow"></app-pre-wedding>
+<app-baby *ngIf="babyShow"></app-baby>
+<app-videos *ngIf="videoShow"></app-videos>

@@ -1,0 +1,30 @@
+.Portfolio-header {
+  min-height: 85vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+    url(../../assets/img/banner.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.navlink:hover {
+  color: rgb(226, 193, 4);
+}
+
+.navbar-2 a {
+  padding: 16px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}

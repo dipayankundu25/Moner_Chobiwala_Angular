@@ -1,0 +1,19 @@
+#navbarMenu ul {
+  padding-right: 100px;
+}
+
+#navbarMenu ul li {
+  padding: 0.5rem;
+}
+
+#navbarMenu ul li a {
+  cursor: pointer;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}

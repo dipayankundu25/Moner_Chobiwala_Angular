@@ -1,0 +1,63 @@
+.service-header {
+  min-height: 85vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+    url(../../assets/img/ASN_5403.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.imgsettings {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.active {
+  color: rgb(226, 193, 4);
+}
+
+.name h1{
+  font-size: 3rem;
+  font-weight: 600;
+}
+strong{
+  font-weight: 500;
+}
+
+.hearderset {
+  box-sizing: border-box;
+}
+
+.hearderset h1 {
+  font-size: 64px;
+}
+
+.position-relative {
+  position: relative!important;
+}
+
+.position-absolute {
+  position: absolute!important;
+}
+
+.position-fixed{
+  position: fixed!important;
+}
+
+.text-overlay {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #8080802b;
+  z-index: 0;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}

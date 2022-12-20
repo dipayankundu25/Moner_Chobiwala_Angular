@@ -1,0 +1,55 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.btn-2 {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn-2:hover {
+  transform: scale(1.07);
+}
+
+.rowsetting p {
+  padding: 10px;
+  color: #6c757d !important;
+}
+
+.rowsetting h2 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.porfolio-settings img {
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.porfolio-settings img {
+  transform: scale(1);
+  transition: 0.2s ease-in;
+  animation-name: scale-in;
+  animation-duration: 0.4s;
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.porfolio-settings img:hover {
+  transform: scale(1.07);
+}

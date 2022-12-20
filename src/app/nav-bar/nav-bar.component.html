@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-md bg-light navbar-light my-2">
+  <a href="" class="navbar-brand text ps-sm-5 ps-0 position-relative">
+    <img src="../../assets/img/Logo.png" class="position-absolute" alt="" style="width: 120px; top: -37px;">
+  </a>
+  <button class="navbar-toggler" (click)="isCollapsed = !isCollapsed"  [attr.aria-expanded]="!isCollapsed"  aria-controls="collapseBasic">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-center" id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+    <ul class="navbar-nav ms-sm-auto pe-sm-5 pr-0">
+      <li class="nav-item me-2 cursor-pointer" >
+        <a class="nav-link" (click)="home()">Home</a>
+      </li>
+      <li class="nav-item me-2 cursor-pointer" >
+        <a class="nav-link" (click)="portfoilo()">Portfolio</a>
+      </li>
+      <li class="nav-item me-2 cursor-pointer" >
+        <a class="nav-link" (click)="service()">Services</a>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
+

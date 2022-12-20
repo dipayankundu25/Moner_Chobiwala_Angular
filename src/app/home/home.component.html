@@ -1,0 +1,162 @@
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    This is a modal.
+  </div>
+</ng-template>
+
+<section id="home">
+  <div class="d-flex flex-column justify-content-center align-items-center text-center text-white hearderset header">
+
+    <h1>Creating Photo</h1>
+    <h1>With Beautiful Moments</h1>
+    <button class="btn btn-warning text-white btn-md" (click)="portfoilo()" >View Portfolio</button>
+
+  </div>
+  <!-- What we offer -->
+
+  <div class="container ourservices py-5">
+    <h1>What We Offer</h1>
+    <p>Our photography style is modern, contemporary and off-beat. A short selection of some of our favourites is given
+      below. To see more of our work, check out the full showcase or follow us on facebook </p>
+
+    <div class="row py-5">
+
+      <div class="col-sm-4 col-12 d-flex justify-content-center align-items-center flex-column px-sm-3 px-5">
+
+        <div class="imgsetting d-flex justify-content-center text-warning" style="font-size: .8em;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-eye-fill"
+            viewBox="0 0 16 16">
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+          </svg>
+        </div>
+        <h2 class="text-center w-50">Wedding Photography</h2>
+        <p class="text-justify">You’re getting married. You and your partner have a beautiful story, and you need
+          someone to tell it? That’s where we come in.</p>
+      </div>
+      <div class="col-sm-4 col-12 d-flexjustify-content-center align-items-center flex-column px-sm-3 px-5">
+
+        <div class=" imgsetting d-flex justify-content-center text-warning">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-camera-video-fill"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+          </svg>
+        </div>
+
+        <h2 class="text-center"> Pre-Wedding Photography</h2>
+        <p class="text-justify">Every Wedding have a beautiful story you and your partner will have best experience with
+          us.</p>
+      </div>
+      <div class="col-sm-4 col-12 d-flexjustify-content-center align-items-center flex-column px-sm-3 px-5">
+
+        <div class="imgsetting d-flex justify-content-center text-warning">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-camera-fill"
+            viewBox="0 0 16 16">
+            <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+            <path
+              d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
+          </svg>
+        </div>
+
+        <h2 class="text-center">Baby-Shower Photography</h2>
+        <p class="text-justify">PREGNANCY is a beautiful time for you and your family, Celebrate it by creating long
+          lasting memories of this exciting time in your life. </p>
+
+      </div>
+
+
+    </div>
+    <div class="setting text-secondary">
+
+      <a (click)="service()" class="cursor-pointer">VIEW ALL SERVICES
+        &rarr;</a>
+
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+  <div class="bg-light-yellow">
+    <div class="container portfolio py-5">
+      <div class="position-relative d-none d-sm-block" style="z-index: 0;">
+        <div class="position-absolute" style="top: -4.5rem;
+                left: -3rem;">
+          <span class="text-overlay">PORTFOLIO</span>
+        </div>
+      </div>
+      <h1 style="z-index: 999;">
+        Our Latest Work</h1>
+      <p>A handpicked selection of some of our favourite Events.</p>
+
+      <div class="row rowsetting">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto porfolio-settings">
+
+          <img class="img-portfolio" src="../../assets/img/DSC_064122.jpg"  (click)="openModal(template)">
+          <img class="img-portfolio" src="../../assets/img/DSC_07202.jpg"  (click)="openModal(template)">
+          <img class="img-portfolio" src="../../assets/img/23-12 (908).jpg"  (click)="openModal(template)">
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto porfolio-settings">
+
+          <img class="img-portfolio" src="../../assets/img/A.S.N 1 (53)_1.jpg"  (click)="openModal(template)">
+          <img class="img-portfolio" src="../../assets/img/_ASN6408.jpg"  (click)="openModal(template)">
+          <img class="img-portfolio" src="../../assets/img/_SAR9651.jpg"  (click)="openModal(template)">
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto porfolio-settings">
+
+          <img class="img-portfolio" src="../../assets/img/_ASN0685.jpg"  (click)="openModal(template)">
+          <img class="img-portfolio" src="../../assets/img/_ASN0665.jpg"  (click)="openModal(template)">
+          <img class="img-portfolio" src="../../assets/img/ASN_4161d.jpg"  (click)="openModal(template)">
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- team -->
+
+  <section class="ourteam py-5">
+    <div class="container">
+      <div class="position-relative d-none d-sm-block" style="z-index: 0;">
+        <div class="position-absolute" style="top: -4.5rem;
+                left: -3rem;">
+          <span class="text-overlay">Meet With</span>
+        </div>
+      </div>
+      <h1 style="z-index: 999;">Moner Chobiwala</h1>
+      <div class="row rowsetting">
+        <div class="col-sm-6 col-12 d-flex flex-column justify-content-center align-items-start name">
+          <p class="lead">Hi,
+            <br> I am <strong class="text-warning">Arun Kumar Das</strong> I am a Photographer.
+            <br>
+            <br>
+            <span style="font-weight: 900;font-size: 2rem;" class="text-warning">“</span>
+            It is an illusion that photos are made with the camera… they are made with the eyes, hearts, and head.
+            <span style="font-weight: 900;font-size: 2rem;" class="text-warning">”</span>
+          </p>
+        </div>
+        <div class="col-sm-6 col-12 d-flex justify-content-center">
+          <figure class="figure">
+            <img src="../../assets/img/Photographer.jpg" class="figure-img img-fluid rounded shadow" height="250px" width="250px">
+          </figure>
+        </div>
+
+        
+
+      </div>
+
+    </div>
+
+  </section>
+
+</section>
+

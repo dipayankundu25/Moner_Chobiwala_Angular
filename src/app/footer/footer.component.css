@@ -1,0 +1,51 @@
+.footersetting h2 {
+  color: rgb(226, 193, 4);
+}
+
+.footersetting h4 {
+  color: rgb(226, 193, 4);
+}
+
+.bg-light-yellow {
+  background: rgba(226, 193, 4, 7%);
+}
+
+.footersetting p,.address {
+  color: rgba(255, 255, 255, 0.616);
+  font-size: 14px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.footersetting p:hover {
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.footersetting i {
+  padding: 10px;
+  color: rgb(226, 193, 4);
+}
+
+.footersetting i:hover {
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.footer2 p {
+  color: #6c757d;
+  padding: 5px;
+  /* position: relative; */
+}
+
+.footer2 p:hover {
+  cursor: pointer;
+}
+
+.footer3 p:hover {
+  cursor: pointer;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
