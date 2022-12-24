@@ -21,6 +21,7 @@ import { VideosComponent } from './videos/videos.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { ModalComponent } from './modal/modal.component';
 
 
 
@@ -37,6 +38,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
     PreWeddingComponent,
     BabyComponent,
     VideosComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,

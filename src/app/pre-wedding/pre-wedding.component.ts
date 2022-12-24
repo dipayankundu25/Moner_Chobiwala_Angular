@@ -1,5 +1,6 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { ModalService } from '../modal.service';
+
 
 @Component({
   selector: 'app-pre-wedding',
@@ -7,7 +8,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
   styleUrls: ['./pre-wedding.component.css'],
 })
 export class PreWeddingComponent implements OnInit {
-  constructor(private modalService: BsModalService) {}
+  constructor(private modalService: ModalService) {}
 
   ngOnInit(): void {}
 
@@ -19,8 +20,7 @@ export class PreWeddingComponent implements OnInit {
     this.preWeddingLoadButton = false;
   }
 
-  modalRef?: BsModalRef;
-  openModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template);
+  openModal() {
+   this.modalService.openModal();
   }
 }

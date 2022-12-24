@@ -1,6 +1,6 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { Router } from '@angular/router';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { ModalService } from '../modal.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +8,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private router: Router, private modalService: BsModalService) {}
+  constructor(private router: Router, private modalService: ModalService) {}
 
   ngOnInit(): void {}
 
@@ -19,8 +19,7 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl('service');
   }
 
-  modalRef?: BsModalRef;
-  openModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template);
+  openModal() {
+    this.modalService.openModal();
   }
 }

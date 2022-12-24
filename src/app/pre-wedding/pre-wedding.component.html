@@ -1,51 +1,39 @@
-<ng-template #template>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">Modal</h4>
-    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
-      <span aria-hidden="true" class="visually-hidden">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    This is a modal.
-  </div>
-</ng-template>
-
 <div class="container portfolio py-5" id="Pre-Wedding">
   <div class="row rowsetting">
     <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto porfolio-settings">
-      <img class="img-portfolio" src="../../assets/img/84492550_2575307419205023_6161670635299799040_n.jpg" (click)="openModal(template)">
-      <img class="img-portfolio" src="../../assets/img/IMG-20191015-WA0026.jpg" (click)="openModal(template)">
-      <img class="img-portfolio" src="../../assets/img/23-12 (908).jpg" (click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/84492550_2575307419205023_6161670635299799040_n.jpg" (click)="openModal()">
+      <img class="img-portfolio" src="../../assets/img/IMG-20191015-WA0026.jpg" (click)="openModal()">
+      <img class="img-portfolio" src="../../assets/img/23-12 (908).jpg" (click)="openModal()">
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto porfolio-settings">
-      <img class="img-portfolio" src="../../assets/img/DSC_0450.jpg" (click)="openModal(template)">
-      <img class="img-portfolio" src="../../assets/img/DSC_0490.jpg" (click)="openModal(template)">
-      <img class="img-portfolio" src="../../assets/img/DSC_3153.JPG" (click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/DSC_0450.jpg" (click)="openModal()">
+      <img class="img-portfolio" src="../../assets/img/DSC_0490.jpg" (click)="openModal()">
+      <img class="img-portfolio" src="../../assets/img/DSC_3153.JPG" (click)="openModal()">
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto porfolio-settings">
-      <img class="img-portfolio" src="../../assets/img/DSC_064122.jpg" (click)="openModal(template)">
-      <img class="img-portfolio" src="../../assets/img/FB_IMG_1615314718068.jpg" (click)="openModal(template)">
-      <img class="img-portfolio" src="../../assets/img/DSC_07202.jpg" (click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/DSC_064122.jpg" (click)="openModal()">
+      <img class="img-portfolio" src="../../assets/img/FB_IMG_1615314718068.jpg" (click)="openModal()">
+      <img class="img-portfolio" src="../../assets/img/DSC_07202.jpg" (click)="openModal()">
     </div>
   </div>
   <div class="row rowsetting" id="load3" *ngIf="preWeddingLoadMore">
     <div class="col-sm-4 col-10 d-block m-auto porfolio-settings">
-      <img class="img-portfolio" src="../../assets/img/DSC_1272.JPG" alt="" (click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/DSC_1272.JPG" alt="" (click)="openModal()">
     </div>
     <div class="col-sm-4 col-10 d-block m-auto porfolio-settings">
-      <img class="img-portfolio" src="../../assets/img/DSC_1480.JPG" alt="" (click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/DSC_1480.JPG" alt="" (click)="openModal()">
     </div>
     <div class="col-sm-4 col-10 d-block m-auto porfolio-settings">
-      <img class="img-portfolio" src="../../assets/img/DSC_1304.JPG" alt="" (click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/DSC_1304.JPG" alt="" (click)="openModal()">
     </div>
     <div class="col-sm-4 col-10 d-block m-auto porfolio-settings">
-      <img class="img-portfolio" src="../../assets/img/DSC_0650_1.jpg" alt="" (click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/DSC_0650_1.jpg" alt="" (click)="openModal()">
     </div>
     <div class="col-sm-4 col-10 d-block m-auto porfolio-settings">
-      <img class="img-portfolio" src="../../assets/img/IMG-20191015-WA0034.jpg" alt="" (click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/IMG-20191015-WA0034.jpg" alt="" (click)="openModal()">
     </div>
     <div class="col-sm-4 col-10 d-block m-auto porfolio-settings">
-      <img class="img-portfolio" src="../../assets/img/DSC_0227.jpg" alt="" (click)="openModal(template)">
+      <img class="img-portfolio" src="../../assets/img/DSC_0227.jpg" alt="" (click)="openModal()">
     </div>
   </div>
   <div class="py-5 text-center d-flex flex-column justify-content-center align-items-center ">
