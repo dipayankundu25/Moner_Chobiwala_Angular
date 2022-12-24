@@ -19,7 +19,7 @@ export class WeddingComponent implements OnInit {
     this.weddingLoadButton = false;
   }
 
-  openModal() {
-    this.modalService.openModal()
+  openModal(event:any) {
+    this.modalService.openModal(event.target.src)
   }
 }

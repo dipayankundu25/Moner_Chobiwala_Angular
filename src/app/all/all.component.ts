@@ -20,7 +20,7 @@ export class AllComponent implements OnInit {
     this.allLoadButton = false;
   }
 
-  openModal() {
-    this.modalService.openModal()
+  openModal(event:any) {
+    this.modalService.openModal(event.target.src)
   }
 }

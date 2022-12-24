@@ -20,7 +20,7 @@ export class BabyComponent implements OnInit {
     this.babyLoadButton = false;
   }
 
-  openModal() {
-    this.modalService.openModal()
+  openModal(event:any) {
+    this.modalService.openModal(event.target.src)
   }
 }

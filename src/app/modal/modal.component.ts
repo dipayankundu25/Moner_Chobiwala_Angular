@@ -1,21 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalService } from '../modal.service';
 
-
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.css']
+  styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent implements OnInit {
-
-  constructor(private modalService: ModalService) { }
-
+  constructor(private modalService: ModalService) {}
+  imgUrl = '';
   ngOnInit(): void {
-    console.log("Modal loaded");
+    this.modalService.currentUrl.subscribe((res) => {
+      console.log(res);
+      this.imgUrl = res;
+    });
+    console.log();
+    console.log('Modal loaded');
   }
-  closeModal(){
+  closeModal() {
     this.modalService.closeModal();
   }
-
 }

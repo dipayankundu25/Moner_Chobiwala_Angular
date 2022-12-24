@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl('service');
   }
 
-  openModal() {
-    this.modalService.openModal();
+  openModal(event:any) {
+    this.modalService.openModal(event.target.src);
   }
 }

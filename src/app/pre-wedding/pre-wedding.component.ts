@@ -20,7 +20,7 @@ export class PreWeddingComponent implements OnInit {
     this.preWeddingLoadButton = false;
   }
 
-  openModal() {
-   this.modalService.openModal();
+  openModal(event:any) {
+   this.modalService.openModal(event.target.src);
   }
 }
