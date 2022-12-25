@@ -11,19 +11,22 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  isCollapsed = true;
+
   home() {
     this.router.navigateByUrl('home');
+    this.isCollapsed = true;
   }
 
   portfoilo() {
     this.router.navigateByUrl('portfoilo');
+    this.isCollapsed = true;
   }
 
   service() {
     this.router.navigateByUrl('service');
+    this.isCollapsed = true;
   }
 
   isValid: boolean = false;
-
-  isCollapsed = true;
 }
