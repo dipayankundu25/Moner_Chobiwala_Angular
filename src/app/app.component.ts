@@ -7,4 +7,8 @@ import { Component, TemplateRef } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularApp';
+
+  onActive() {
+    window.scroll(0, 0);
+  }
 }
